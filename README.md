@@ -24,15 +24,20 @@ ddev start
 ddev composer install
 ddev bun install
 ddev artisan migrate:fresh --seed --force
+ddev artisan key:generate
 ddev bun run dev #in a separete terminal
 ddev launch
 ```
 
 After all yo can see your project in the browser
-`https://laravel-filament.ddev.site/app/login`
-Change `laravel-filament` to `your-project-directory`
-The user is test@example.com the password is `password`
+Try the `/admin` and login with the user is `test@example.com` the password is
+`password`
+
 You can change it in the `database/seeders/DatabaseSeeder.php` before the migration.
+
+Now try to change something in app/Filament/Resources/UserResource.php
+
+Change the `.env` file with the needed locale to change the language
 
 ##
 Original
