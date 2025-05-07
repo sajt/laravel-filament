@@ -21,7 +21,9 @@ git clone https://github.com/sajt/laravel-filament.git .
 ddev start
 ddev composer install
 ddev bun install
+ddev artisan migrate:fresh --seed --force
 ddev bun run dev #in a separete terminal
+ddev launch
 ```
 
 After all yo can see your project in the browser
