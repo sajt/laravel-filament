@@ -27,6 +27,8 @@ ddev artisan migrate:fresh --seed --force
 ddev artisan key:generate
 ddev bun run dev #in a separete terminal
 ddev launch
+#To make a fresh git
+rm -rf .git
 ```
 
 After all yo can see your project in the browser
