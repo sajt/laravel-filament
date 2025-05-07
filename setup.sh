@@ -4,6 +4,9 @@
 DIR_NAME=$(basename $(pwd))
 
 # .ddev/config.yaml módosítása
-sed -i '' "s/laravel-filament/$DIR_NAME/g" .ddev/config.yaml
+perl -pi -e "s/laravel-filament/$DIR_NAME/g" .ddev/config.yaml
+
+# .env módosítása
+perl -pi -e "s/laravel-filament/$DIR_NAME/g" .env
 
 echo "DDEV konfiguráció frissítve: $DIR_NAME"

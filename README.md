@@ -18,6 +18,7 @@ Requirement is `ddev` https://ddev.readthedocs.io/en/stable/users/quickstart/#la
 mkdir your-project-directory
 cd your-project-directory
 git clone https://github.com/sajt/laravel-filament.git .
+# Change project name where needed.
 . ./setup.sh
 ddev start
 ddev composer install
