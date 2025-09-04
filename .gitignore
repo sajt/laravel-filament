@@ -23,3 +23,7 @@ yarn-error.log
 /.vscode
 /.zed
 laradumps.yaml
+.ddev/.DS_Store
+app/.DS_Store
+bootstrap/.DS_Store
+public/.DS_Store
